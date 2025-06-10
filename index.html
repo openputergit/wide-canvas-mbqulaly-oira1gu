@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robot Engineer Portfolio</title>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Space Grotesk', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .neubrutalism {
+            border: 3px solid #000;
+            box-shadow: 5px 5px 0px #000;
+        }
+        .hover-lift {
+            transition: transform 0.2s;
+        }
+        .hover-lift:hover {
+            transform: translate(-2px, -2px);
+            box-shadow: 7px 7px 0px #000;
+        }
+        body {
+            background-color: #1a1a1a;
+            color: #ffffff;
+        }
+        .gradient-text {
+            background: linear-gradient(45deg, #64ffda, #00bcd4);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-[#1a1a1a] z-50 py-4 border-b-2 border-[#64ffda]">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center">
+                <h1 class="text-2xl font-bold gradient-text">RoboEngineer</h1>
+                <div class="space-x-6">
+                    <a href="#home" class="hover:text-[#64ffda] transition-colors">Home</a>
+                    <a href="#resume" class="hover:text-[#64ffda] transition-colors">Resume</a>
+                    <a href="#experience" class="hover:text-[#64ffda] transition-colors">Experience</a>
+                    <a href="#projects" class="hover:text-[#64ffda] transition-colors">Projects</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-32 pb-20">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h1 class="text-5xl font-bold mb-6">
+                        <span class="gradient-text">Robotics Engineer</span><br>
+                        Building the Future
+                    </h1>
+                    <p class="text-xl mb-8 text-gray-300">Bridging Code and Cognition | AI Enthusiast | Robot Whisperer</p>
+                    <div class="neubrutalism bg-[#64ffda] text-black inline-block px-6 py-3 hover-lift cursor-pointer">
+                        Let's Connect <i class="bi bi-arrow-right ml-2"></i>
+                    </div>
+                </div>
+                <div class="flex justify-center">
+                    <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_szleppto.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></lottie-player>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-20 bg-[#212121]">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold mb-12 text-center gradient-text">About Me</h2>
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="neubrutalism bg-[#2a2a2a] p-6">
+                    <p class="text-lg mb-6">
+                        Passionate robotics engineer with expertise in AI and machine learning. Building intelligent systems that push the boundaries of what's possible in automation and cognitive computing.
+                    </p>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="flex items-center"><i class="bi bi-check-circle-fill text-[#64ffda] mr-2"></i>Python</div>
+                        <div class="flex items-center"><i class="bi bi-check-circle-fill text-[#64ffda] mr-2"></i>ROS</div>
+                        <div class="flex items-center"><i class="bi bi-check-circle-fill text-[#64ffda] mr-2"></i>TensorFlow</div>
+                        <div class="flex items-center"><i class="bi bi-check-circle-fill text-[#64ffda] mr-2"></i>Computer Vision</div>
+                    </div>
+                </div>
+                <div class="flex justify-center items-center">
+                    <lottie-player src="https://assets3.lottiefiles.com/private_files/lf30_WdTEui.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></lottie-player>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="py-20">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold mb-12 text-center gradient-text">Resume</h2>
+            <div class="neubrutalism bg-[#2a2a2a] p-8 mb-8">
+                <h3 class="text-2xl font-bold mb-4">Education</h3>
+                <div class="mb-6">
+                    <p class="text-[#64ffda]">Master's in Robotics Engineering</p>
+                    <p class="text-gray-300">Stanford University | 2019-2021</p>
+                </div>
+                <div class="mb-6">
+                    <p class="text-[#64ffda]">Bachelor's in Computer Science</p>
+                    <p class="text-gray-300">MIT | 2015-2019</p>
+                </div>
+                <a href="#" class="neubrutalism bg-[#64ffda] text-black px-6 py-3 inline-block hover-lift">
+                    Download Full Resume <i class="bi bi-download ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-20 bg-[#212121]">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold mb-12 text-center gradient-text">Experience</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="neubrutalism bg-[#2a2a2a] p-6 hover-lift">
+                    <h3 class="text-xl font-bold text-[#64ffda]">Senior Robotics Engineer</h3>
+                    <p class="text-gray-300">Boston Dynamics | 2021-Present</p>
+                    <ul class="mt-4 space-y-2">
+                        <li>• Led development of autonomous navigation systems</li>
+                        <li>• Implemented machine learning algorithms for robot perception</li>
+                    </ul>
+                </div>
+                <div class="neubrutalism bg-[#2a2a2a] p-6 hover-lift">
+                    <h3 class="text-xl font-bold text-[#64ffda]">AI Research Intern</h3>
+                    <p class="text-gray-300">OpenAI | 2020</p>
+                    <ul class="mt-4 space-y-2">
+                        <li>• Developed reinforcement learning models</li>
+                        <li>• Published research on robot manipulation</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold mb-12 text-center gradient-text">Projects</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="neubrutalism bg-[#2a2a2a] p-6 hover-lift">
+                    <h3 class="text-xl font-bold text-[#64ffda]">Autonomous Drone</h3>
+                    <p class="text-gray-300 my-4">Built an AI-powered drone using computer vision and deep learning</p>
+                    <div class="flex space-x-2">
+                        <span class="bg-[#64ffda] text-black px-2 py-1 text-sm">Python</span>
+                        <span class="bg-[#64ffda] text-black px-2 py-1 text-sm">TensorFlow</span>
+                    </div>
+                </div>
+                <div class="neubrutalism bg-[#2a2a2a] p-6 hover-lift">
+                    <h3 class="text-xl font-bold text-[#64ffda]">Robot Arm Control</h3>
+                    <p class="text-gray-300 my-4">Developed precise control systems for robotic arm manipulation</p>
+                    <div class="flex space-x-2">
+                        <span class="bg-[#64ffda] text-black px-2 py-1 text-sm">ROS</span>
+                        <span class="bg-[#64ffda] text-black px-2 py-1 text-sm">C++</span>
+                    </div>
+                </div>
+                <div class="neubrutalism bg-[#2a2a2a] p-6 hover-lift">
+                    <h3 class="text-xl font-bold text-[#64ffda]">AI Vision System</h3>
+                    <p class="text-gray-300 my-4">Created real-time object detection system for robots</p>
+                    <div class="flex space-x-2">
+                        <span class="bg-[#64ffda] text-black px-2 py-1 text-sm">PyTorch</span>
+                        <span class="bg-[#64ffda] text-black px-2 py-1 text-sm">OpenCV</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 bg-[#212121]">
+        <div class="container mx-auto px-4 text-center">
+            <div class="flex justify-center space-x-6 mb-8">
+                <a href="#" class="text-3xl text-[#64ffda] hover:text-white transition-colors"><i class="bi bi-github"></i></a>
+                <a href="#" class="text-3xl text-[#64ffda] hover:text-white transition-colors"><i class="bi bi-linkedin"></i></a>
+                <a href="#" class="text-3xl text-[#64ffda] hover:text-white transition-colors"><i class="bi bi-envelope"></i></a>
+            </div>
+            <p class="text-gray-400">Built with <i class="bi bi-heart-fill text-[#64ffda]"></i> and Python</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+<script>document.body.addEventListener('wheel', e => { if (!e.ctrlKey) return; e.preventDefault(); return }, { passive: false })</script>
+	</body>
+</html>
